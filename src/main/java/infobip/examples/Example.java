@@ -2,7 +2,7 @@ package infobip.examples;
 
 public class Example {
 
-    static final String USERNAME = "test-username9";
+    static final String USERNAME = "test-username10";
     static final String PASSWORD = "test-password9";
 
     static final String FROM = "InfoSMS";
