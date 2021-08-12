@@ -4,6 +4,13 @@ public class ApiKeyAuthConfiguration extends Configuration {
 
     private final String apiKey;
 
+    public ApiKeyAuthConfiguration(String baseUrl, String apiKey, String proxyHost, int proxyPort) {
+        this.baseUrl = baseUrl;
+        this.apiKey = apiKey;
+        this.proxyHost = proxyHost;
+        this.proxyPort = proxyPort;
+    }
+
     public ApiKeyAuthConfiguration(String baseUrl, String apiKey) {
         this.baseUrl = baseUrl;
         this.apiKey = apiKey;
