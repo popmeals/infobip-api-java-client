@@ -1,9 +1,12 @@
 package infobip.api.config;
 
+import java.net.Proxy;
+
 public abstract class Configuration {
     protected String baseUrl;
     protected int connectionTimeout = 10000;
     protected int readTimeout = 10000;
+    protected Proxy proxy;
 
     abstract public String getAuthorizationHeader();
 
@@ -25,5 +28,13 @@ public abstract class Configuration {
 
     public int getReadTimeout() {
         return readTimeout;
+    }
+
+    public Proxy getProxy() {
+        return proxy;
+    }
+
+    public void setProxy(Proxy proxy) {
+        this.proxy = proxy;
     }
 }
